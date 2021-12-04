@@ -14,11 +14,12 @@ Within this repo, you will find:
 <br>
 
 ![image](https://user-images.githubusercontent.com/29565530/144708189-26a56129-a8d6-4d9b-94ac-58697d8b6884.png)
-<p> An example of some of the basic notes within the cheatsheet </p>
-
-HTML and JS code modified from https://github.com/bradtraversy's original source - JS modern syntax course
+<p> ^ An example of some of the basic notes within the cheatsheet </p>
 
 Recommended plugins for vscode:
 1. [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - convenient code formatting & colorization
 2. [Live preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) - hosts a local server without node to preview HTML & JS webpages
 4. [Javascript ES6 code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) - faster typing of common actions
+
+
+**Basic HTML and JS code modified from https://github.com/bradtraversy's original source - JS modern syntax course**
