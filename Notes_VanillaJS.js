@@ -1,22 +1,24 @@
 // The following code is for learning purposes only. this .JS document is non-functional. //
 
 // LOGGING OUTPUT
-alert("Hello World"); // Do not use for debugging. Stops script and only strings
 console.log("Hello World");
-console.error("This is an error");
-console.warn("This is a warning");
+console.error("This is an error"); // Red text in F12 Dev tools - uses break point to code error src.
+console.warn("This is a warning"); // YELLOW text in F12 Dev tools - uses break point to code warning src.
 
 // VARIABLES - var, let, const
-let age = 30;
+let age = 30; // let - can be directly reassigned
+let age = 31; // reassigned
 
-// let can be re-assigned, const can not
-age = 31;
+var count = 1; // var - globally defined, not recommended as you may face conflicts if the same name is used elsewhere.
+
+const ticker = 1; // constant variable - cannot be directly reassigned.
 
 // DATA TYPES - String, Number, Boolean, null, undefined
-const name = "Brad";
-const age = 37;
-const rating = 3.5;
-const isCool = true;
+
+const name = "Matt"; // String
+const age = 23; // Number
+const rating = 4.5; // Number - Float(decimal number) is also just declared as a number.
+const isCool = true; // Boolean true/false
 const x = null;
 const y = undefined;
 let z; // undefined
@@ -29,7 +31,7 @@ console.log(typeof z);
 // Concatenation
 console.log("My name is " + name + " and I am " + age);
 // Template literal (better)
-console.log(`My name is ${name} and I am ${age}`);
+console.log(`My name is ${name} and I am ${age}`); // works the same as above, clearer to notate. Use back quotes ``
 
 // String methods & properties
 const s = "Hello World";
@@ -49,7 +51,7 @@ const numbers = [1, 2, 3, 4, 5];
 const fruits = ["apples", "oranges", "pears", "grapes"];
 console.log(numbers, fruit);
 
-// Get one value - Arrays start at 0
+// To get a single value, use Arr[x] format. NOTE: Arrays start at 0
 console.log(fruits[1]);
 
 // Add value
