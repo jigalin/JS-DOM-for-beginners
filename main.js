@@ -13,17 +13,18 @@ function onSubmit(e) {
     msg.classList.add("error");
     msg.innerHTML = "Error: please enter a name and email.";
 
-    setTimeout(() => msg.remove(), 3000);
+    setTimeout(() => {
+      msg.innerHTML = null;
+      msg.classList.remove("error");
+    }, 3000);
   } else {
     const li = document.createElement("li");
     li.appendChild(
       document.createTextNode(`${nameInput.value} : ${emailInput.value}`)
     );
-
     userList.appendChild(li);
 
-    // Clear Fields
-    nameInput.value = "";
-    emailInput.value = "";
+    nameInput.value = ""; // clear the value of nameinput on submit
+    emailInput.value = ""; // clear the value of email on submit
   }
 }

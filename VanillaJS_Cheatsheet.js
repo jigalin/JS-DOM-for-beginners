@@ -1,13 +1,23 @@
 // The following code is for learning purposes only. this .JS document is non-functional. //
 
-// LOGGING OUTPUT
+// ---------------------------------------------------------------------------------------
+// 0. LOGGING OUTPUT - This is very useful for learning JS or debugging code,
+// ---------------------------------------------------------------------------------------
+
+// as you can log out direct strings, variables or objects.
 console.log("Hello World");
 console.error("This is an error"); // Red text in F12 Dev tools - uses break point to code error src.
 console.warn("This is a warning"); // YELLOW text in F12 Dev tools - uses break point to code warning src.
 
-// VARIABLES - var, let, const
+// ---------------------------------------------------------------------------------------
+// 1. VARIABLES & DATA TYPES
+// ---------------------------------------------------------------------------------------
+
+// VARIABLES - STORING DATA.
+// You can declare these with:
+// var, let, const
+
 let age = 30; // let - can be directly reassigned
-let age = 31; // reassigned
 
 var count = 1; // var - globally defined, not recommended as you may face conflicts if the same name is used elsewhere.
 
@@ -23,10 +33,12 @@ const x = null;
 const y = undefined;
 let z; // undefined
 
-// Check type
+// Check the type of a given variable
 console.log(typeof z);
 
-// STRINGS
+// ---------------------------------------------------------------------------------------
+// 2. STRING MANIPULATION
+// ---------------------------------------------------------------------------------------
 
 // Concatenation
 console.log("My name is " + name + " and I am " + age);
@@ -46,7 +58,10 @@ val = s.substring(0, 5);
 // Split into array
 val = s.split("");
 
-// ARRAYS - Store multiple values in a variable
+// ---------------------------------------------------------------------------------------
+// 3. ARRAYS - Store multiple values in a variable
+// ---------------------------------------------------------------------------------------
+
 const numbers = [1, 2, 3, 4, 5];
 const fruits = ["apples", "oranges", "pears", "grapes"];
 console.log(numbers, fruit);
@@ -54,10 +69,10 @@ console.log(numbers, fruit);
 // To get a single value, use Arr[x] format. NOTE: Arrays start at 0
 console.log(fruits[1]);
 
-// Add value
+// Add value to a specific array index (unsafe)
 fruits[4] = "blueberries";
 
-// Add value using push()
+// Add value using push() (safe), as existing data is untouched
 fruits.push("strawberries");
 
 // Add to beginning
@@ -66,11 +81,16 @@ fruits.unshift("mangos");
 // Remove last value
 fruits.pop();
 
-// // Check if array
+// Check if an object is an array
 console.log(Array.isArray(fruits));
 
-// // Get index
+// Get the index of a given data source / string in this case
 console.log(fruits.indexOf("oranges"));
+// In this example - this would log 1, as oranges is in the second slot of the array. (1) - as remember, arrays start from 0.
+
+// ---------------------------------------------------------------------------------------
+// 4. OBJECTS - Storing an assortment of data including variables and arrays.
+// ---------------------------------------------------------------------------------------
 
 // OBJECT LITERALS
 const person = {
@@ -121,7 +141,9 @@ console.log(todos[1].text);
 // Format as JSON
 console.log(JSON.stringify(todos));
 
-// LOOPS
+// ---------------------------------------------------------------------------------------
+// 5. CONTROL STATEMENTS - for, while, loop
+// ---------------------------------------------------------------------------------------
 
 // For
 for (let i = 0; i <= 10; i++) {
@@ -167,7 +189,9 @@ const todo1 = todos.filter(function (todo) {
   return todo.id === 1;
 });
 
-// CONDITIONALS
+// ---------------------------------------------------------------------------------------
+// 6. CONDITIONALS - if else switch (if this is true, then do that)
+// ---------------------------------------------------------------------------------------
 
 // Simple If/Else Statement
 const x = 30;
@@ -195,6 +219,10 @@ switch (color) {
 // Ternary operator / Shorthand if
 const z = color === "red" ? 10 : 20;
 
+// ---------------------------------------------------------------------------------------
+// 7. FUNCTIONAL BASED PROGRAMMING
+// ---------------------------------------------------------------------------------------
+
 // FUNCTIONS
 function greet(greeting = "Hello", name) {
   if (!name) {
@@ -210,7 +238,9 @@ function greet(greeting = "Hello", name) {
 const greet = (greeting = "Hello", name = "There") => `${greeting} ${name}`;
 console.log(greet("Hi"));
 
-// OOP
+// ---------------------------------------------------------------------------------------
+// 8. OBJECT ORIENTED PROGRAMMING
+// ---------------------------------------------------------------------------------------
 
 // Constructor Function
 function Person(firstName, lastName, dob) {
@@ -251,7 +281,10 @@ console.log(typeof name); // Shows 'Object'
 const num = new Number(5);
 console.log(typeof num); // Shows 'Object'
 
-// ES6 CLASSES
+// ---------------------------------------------------------------------------------------
+// 9. ES6 Classes
+// ---------------------------------------------------------------------------------------
+
 class Person {
   constructor(firstName, lastName, dob) {
     this.firstName = firstName;
@@ -273,7 +306,9 @@ class Person {
 const person1 = new Person("John", "Doe", "7-8-80");
 console.log(person1.getBirthYear());
 
-// ELEMENT SELECTORS
+// ---------------------------------------------------------------------------------------
+// 10. Javascript DOM element selectors - not vital if you're using a framework, but good to know.
+// ---------------------------------------------------------------------------------------
 
 // Single Element Selectors
 console.log(document.getElementById("my-form"));
@@ -297,7 +332,9 @@ ul.lastElementChild.innerHTML = "<h1>Hello</h1>";
 const btn = document.querySelector(".btn");
 // btn.style.background = 'red';
 
-// EVENTS
+// ---------------------------------------------------------------------------------------
+// 11. Javascript events
+// ---------------------------------------------------------------------------------------
 
 // Mouse Event
 btn.addEventListener("click", (e) => {
@@ -314,7 +351,9 @@ nameInput.addEventListener("input", (e) => {
   document.querySelector(".container").append(nameInput.value);
 });
 
-// USER FORM SCRIPT
+// ---------------------------------------------------------------------------------------
+// 12. Scripting
+// ---------------------------------------------------------------------------------------
 
 // Put DOM elements into variables
 const myForm = document.querySelector("#my-form");
