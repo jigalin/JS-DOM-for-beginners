@@ -1,4 +1,4 @@
-# 📚 Vanilla Javascript Beginners guide
+# 📚 Vanilla Javascript Beginners guide by JIGALIN
 
 **Want to learn the basics of Javascript and prefer to read through code directly to understand how it works?**
 
@@ -23,3 +23,7 @@ Recommended plugins for vscode:
 
 
 **Basic HTML and JS code modified from https://github.com/bradtraversy's original source - JS modern syntax course**
+
+<br>
+
+_**Did you find this repo useful? Please consider starring this repo or following me on github 😊**_
