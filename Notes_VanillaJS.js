@@ -1,4 +1,4 @@
-// ATTENTION: THIS IS CODE FROM THE YOUTUBE CRASH COURSE. IT IS NOT MEANT TO RUN, IT IS JUST FOR LEARNING PURPOSES //
+// The following code is for learning purposes only. this .JS document is non-functional. //
 
 // LOGGING OUTPUT
 alert("Hello World"); // Do not use for debugging. Stops script and only strings
