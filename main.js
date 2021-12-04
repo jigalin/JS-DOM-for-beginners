@@ -24,7 +24,7 @@ function onSubmit(e) {
     );
     userList.appendChild(li);
 
-    nameInput.value = ""; // clear the value of nameinput on submit
-    emailInput.value = ""; // clear the value of email on submit
+    nameInput.value = "";
+    emailInput.value = "";
   }
 }
