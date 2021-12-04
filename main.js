@@ -1,3 +1,5 @@
+// UNSURE WHAT'S GOING ON BELOW? Check out main-NOTATED.js.
+
 const myForm = document.querySelector("#my-form");
 const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
